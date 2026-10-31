@@ -1,120 +1,734 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="A21 STUDIO — تصميم الأزياء وتطوير المنتجات والتصميم المخصص للمطاعم والمتاجر في الأردن.">
-<title>A21 STUDIO | Ideas into Fashion Files</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#102e2c">
+
+<title>A21 STUDIO | Fashion Design</title>
+
+<meta name="description" content="A21 STUDIO - Fashion Design, Product Development and Technical Production Files. Amman, Jordan.">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
 <style>
-:root{--bg:#F4EBDD;--paper:#fffaf2;--ink:#1e2927;--muted:#5f6b67;--brand:#164E49;--brand-ink:#ffffff;--line:#d9d3c8;--accent:#91AFC1;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1f1d;--paper:#16302d;--ink:#f1ebe0;--muted:#a9b8b3;--brand:#91c4bb;--brand-ink:#0f1f1d;--line:#2b4743;--accent:#91AFC1;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#0f1f1d;--paper:#16302d;--ink:#f1ebe0;--muted:#a9b8b3;--brand:#91c4bb;--brand-ink:#0f1f1d;--line:#2b4743;--accent:#91AFC1;color-scheme:dark}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:Cairo,Tahoma,Arial,sans-serif;line-height:1.85}
-a{color:inherit;text-decoration:none}
-.wrap{width:min(1080px,90%);margin-inline:auto}
-nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
-.logo{font-weight:800;letter-spacing:.18em;color:var(--brand);direction:ltr}
-.links{display:flex;gap:20px;font-size:.92rem;flex-wrap:wrap}
-.links a:hover{color:var(--brand)}
-.hero{padding:80px 0 70px}
-.eyebrow{font-size:.8rem;font-weight:600;color:var(--brand);letter-spacing:.06em}
-h1{font-size:clamp(2.6rem,8vw,5.6rem);line-height:1.12;margin:14px 0 20px;color:var(--brand);font-weight:800}
-h1 em{display:block;font-style:normal;color:var(--muted)}
-.hero p{max-width:620px;color:var(--muted);font-size:1.08rem;margin:0}
-.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 22px;border:1px solid var(--brand);border-radius:6px;font-weight:700;font-family:inherit;font-size:.95rem;cursor:pointer;background:transparent;color:var(--brand)}
-.btn.p{background:var(--brand);color:var(--brand-ink)}
-.sec{padding:64px 0;border-top:1px solid var(--line)}
-h2{font-size:clamp(1.8rem,4.5vw,2.8rem);line-height:1.25;margin:6px 0 28px;color:var(--brand)}
-.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.card{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:24px}
-.card b{font-size:.75rem;letter-spacing:.1em;color:var(--brand);direction:ltr;display:block;text-align:right}
-.card h3{margin:16px 0 8px;font-size:1.2rem}
-.card p{margin:0;color:var(--muted);font-size:.95rem}
-.about{max-width:720px;color:var(--muted)}
-.about q{display:block;margin-top:18px;font-size:1.4rem;font-weight:800;color:var(--brand);direction:ltr;text-align:right;quotes:none}
-form{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:760px}
-.f{display:flex;flex-direction:column;gap:6px}
-.full{grid-column:1/-1}
-label{font-weight:600;font-size:.9rem}
-input,select,textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);font:inherit}
-input:focus,select:focus,textarea:focus{outline:2px solid var(--brand);outline-offset:1px}
-textarea{min-height:120px;resize:vertical}
-.note{font-size:.82rem;color:var(--muted);margin:0}
-footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:.82rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
-.wa{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:var(--accent);color:#102c36;border-radius:999px;padding:10px 18px;font-weight:800;box-shadow:0 4px 16px #0003;z-index:5}
-@media(max-width:760px){.cards,form{grid-template-columns:1fr}.hero{padding:56px 0}}
+:root {
+  --green: #102e2c;
+  --green2: #1b4540;
+  --ivory: #f5f1e8;
+  --gold: #b69b69;
+  --white: #ffffff;
+  --text: #262b28;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--ivory);
+  color: var(--text);
+  font-family: 'Cairo', sans-serif;
+}
+
+a { text-decoration: none; color: inherit; }
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Navigation */
+
+header {
+  background: var(--green);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #ffffff20;
+}
+
+.nav {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 29px;
+  letter-spacing: 3px;
+  color: var(--ivory);
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+}
+
+nav a {
+  font-size: 13px;
+  color: #e8e4da;
+  transition: .3s;
+}
+
+nav a:hover { color: var(--gold); }
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: 0;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Hero */
+
+.hero {
+  background: var(--green);
+  color: white;
+  min-height: 610px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  width: 100%;
+  padding: 100px 15px;
+}
+
+.hero-label {
+  color: var(--gold);
+  letter-spacing: 5px;
+  font-size: 12px;
+  margin-bottom: 25px;
+  direction: ltr;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(55px, 9vw, 105px);
+  letter-spacing: 7px;
+  margin-bottom: 15px;
+}
+
+.hero h2 {
+  color: var(--gold);
+  font-size: clamp(17px, 3vw, 25px);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #d6d8d0;
+  max-width: 650px;
+  margin: 0 auto 35px;
+  line-height: 2.1;
+  font-size: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 32px;
+  border: 1px solid var(--gold);
+  color: var(--ivory);
+  transition: .3s;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: var(--gold);
+  color: var(--green);
+}
+
+/* Sections */
+
+section { padding: 90px 0; }
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-heading span {
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 3px;
+  direction: ltr;
+  display: block;
+}
+
+.section-heading h2 {
+  font-size: 32px;
+  color: var(--green);
+  margin: 12px 0;
+}
+
+.section-heading p {
+  color: #777;
+  font-size: 14px;
+}
+
+.about {
+  text-align: center;
+}
+
+.about-text {
+  max-width: 800px;
+  margin: auto;
+  line-height: 2.3;
+  color: #555;
+  font-size: 16px;
+}
+
+/* Vision */
+
+.vision {
+  background: var(--green);
+  color: white;
+}
+
+.vision .section-heading h2 { color: white; }
+
+.vision-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.vision-card {
+  border: 1px solid #ffffff30;
+  padding: 35px;
+  text-align: center;
+}
+
+.vision-card h3 {
+  color: var(--gold);
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.vision-card p {
+  color: #deded6;
+  line-height: 2;
+  font-size: 14px;
+}
+
+/* Services */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service {
+  background: white;
+  padding: 35px 25px;
+  border-bottom: 3px solid var(--gold);
+  transition: .3s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service .number {
+  font-family: 'Playfair Display', serif;
+  color: var(--gold);
+  font-size: 35px;
+}
+
+.service h3 {
+  color: var(--green);
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.service p {
+  color: #777;
+  font-size: 13px;
+  line-height: 2;
+}
+
+/* Portfolio */
+
+.portfolio {
+  background: #eee9df;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.project {
+  background: white;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  height: 440px;
+  object-fit: contain;
+  background: #fff;
+  display: block;
+}
+
+.project-info { padding: 22px; }
+
+.project-info h3 {
+  color: var(--green);
+  font-size: 19px;
+}
+
+.project-info p {
+  color: #777;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.project-tag {
+  display: inline-block;
+  color: #8c754b;
+  font-size: 11px;
+  margin-top: 12px;
+  border: 1px solid #c7b38e;
+  padding: 5px 12px;
+}
+
+/* Inspiration */
+
+.inspiration {
+  background: var(--ivory);
+}
+
+.reference {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.reference img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: contain;
+}
+
+.reference h3 {
+  color: var(--green);
+  margin: 20px;
+}
+
+.reference p {
+  color: #777;
+  font-size: 13px;
+  padding: 0 20px;
+  line-height: 2;
+}
+
+/* Founder */
+
+.founder {
+  background: var(--green);
+  color: white;
+  text-align: center;
+}
+
+.founder .section-heading h2 { color: white; }
+
+.founder-name {
+  font-size: 27px;
+  color: var(--gold);
+  margin-bottom: 15px;
+}
+
+.founder p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 2.3;
+  color: #ddd;
+}
+
+/* Contact */
+
+.contact {
+  text-align: center;
+}
+
+.contact-info {
+  margin: 25px 0;
+  line-height: 2.5;
+}
+
+.contact-info a { color: var(--green2); }
+
+.contact-btn {
+  display: inline-block;
+  background: var(--green);
+  color: white;
+  padding: 13px 30px;
+  margin: 10px;
+  transition: .3s;
+}
+
+.contact-btn:hover {
+  background: var(--gold);
+  color: var(--green);
+}
+
+/* Footer */
+
+footer {
+  background: #0b211f;
+  color: #aaa;
+  text-align: center;
+  padding: 35px 15px;
+  font-size: 12px;
+  line-height: 2.3;
+}
+
+footer strong {
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+/* Mobile */
+
+@media(max-width: 800px) {
+  .menu-btn { display: block; }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 78px;
+    right: 0;
+    width: 100%;
+    background: var(--green);
+    flex-direction: column;
+    padding: 25px;
+    gap: 20px;
+  }
+
+  nav.open { display: flex; }
+
+  .services-grid { grid-template-columns: 1fr; }
+  .vision-grid { grid-template-columns: 1fr; }
+  .portfolio-grid { grid-template-columns: 1fr; }
+
+  section { padding: 65px 0; }
+
+  .project img { height: 370px; }
+
+  .hero { min-height: 540px; }
+}
 </style>
 </head>
+
 <body>
-<header class="wrap"><nav>
-<a class="logo" href="#top">A21 STUDIO</a>
-<div class="links"><a href="#services">الخدمات</a><a href="#about">من نحن</a><a href="#order">اطلب خدمة</a><a href="#contact">تواصل</a></div>
-</nav></header>
-<main id="top">
-<section class="hero wrap">
-<div class="eyebrow">تصميم وتطوير المنتجات · الأردن</div>
-<h1>من الفكرة إلى<em>التصميم والتنفيذ.</em></h1>
-<p>يقدّم A21 STUDIO خدمات التصميم المخصص للأزياء والمطاعم والمتاجر، ونحوّل فكرتك إلى تفاصيل واضحة ومنظمة جاهزة للخطوة التالية.</p>
-<div class="row"><a class="btn p" href="#services">اكتشف خدماتنا</a><a class="btn" href="#order">أرسل طلبك</a></div>
+
+<header>
+  <div class="container nav">
+    <a href="#home" class="logo">A21 STUDIO</a>
+
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="فتح القائمة">☰</button>
+
+    <nav id="nav">
+      <a href="#home" onclick="closeMenu()">الرئيسية</a>
+      <a href="#about" onclick="closeMenu()">من نحن</a>
+      <a href="#services" onclick="closeMenu()">خدماتنا</a>
+      <a href="#portfolio" onclick="closeMenu()">أعمالنا</a>
+      <a href="#founder" onclick="closeMenu()">المؤسس</a>
+      <a href="#contact" onclick="closeMenu()">تواصل معنا</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-label">FASHION DESIGN & DEVELOPMENT</div>
+
+    <h1>A21 STUDIO</h1>
+
+    <h2>Ideas into Fashion Files.</h2>
+
+    <p>
+      استوديو متخصص في تصميم الأزياء وتطوير المنتجات
+      وتجهيز الأفكار الإبداعية لتصبح تصاميم وملفات إنتاج
+      واضحة وجاهزة للتنفيذ.
+    </p>
+
+    <a href="#about" class="btn">اكتشف A21 STUDIO</a>
+  </div>
 </section>
 
-<section class="sec" id="services"><div class="wrap">
-<div class="eyebrow">خدماتنا</div><h2>تصميم حسب احتياج مشروعك.</h2>
-<div class="cards">
-<article class="card"><b>01 / FASHION</b><h3>تصميم الأزياء وتطوير الموديلات</h3><p>تطوير أفكار الملابس وتحسين الموديل وتفاصيله. يمكن إضافة ملف Tech Pack كخيار ضمن الطلب.</p></article>
-<article class="card"><b>02 / RESTAURANTS &amp; CAFÉS</b><h3>تصميم المطاعم والمقاهي</h3><p>قوائم الطعام والشراب، والتغليف، والأكواب، والمواد البصرية والإعلانات بما يناسب هوية المكان.</p></article>
-<article class="card"><b>03 / SHOPS &amp; RETAIL</b><h3>تصميم المحلات والمتاجر</h3><p>الهوية البصرية والملصقات والأكياس والتغليف، ومواد عرض المنتجات وإعلانات المنصات الاجتماعية.</p></article>
-</div></div></section>
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-heading">
+      <span>ABOUT US</span>
+      <h2>من نحن</h2>
+    </div>
 
-<section class="sec" id="about"><div class="wrap">
-<div class="eyebrow">عن A21 STUDIO</div><h2>فكرة إبداعية بخطوات أوضح.</h2>
-<div class="about"><p>استوديو تصميم وتطوير منتجات في الأردن، يجمع بين التفكير الإبداعي والاهتمام بالتفاصيل العملية، ويساعد العلامات الناشئة وأصحاب المشاريع على تحويل أفكارهم إلى تصاميم واضحة قابلة للتطوير.</p><q>Ideas into Fashion Files.</q></div>
-</div></section>
+    <p class="about-text">
+      A21 STUDIO هو استوديو أردني يعمل في قطاع الأزياء،
+      يجمع بين الإبداع والتصميم والتطوير التقني للمنتجات.
+      نعمل على تحويل الأفكار إلى تصاميم واضحة ومنظمة،
+      مع تطوير الموديلات وإعداد ملفات فنية تساعد على
+      الانتقال من مرحلة الفكرة إلى مرحلة التنفيذ والإنتاج.
+    </p>
+  </div>
+</section>
 
-<section class="sec" id="order"><div class="wrap">
-<div class="eyebrow">ابدأ طلبك</div><h2>أخبرنا عن فكرتك.</h2>
-<form id="orderForm">
-<div class="f"><label for="n">الاسم أو العلامة التجارية *</label><input id="n" name="n" required autocomplete="name"></div>
-<div class="f"><label for="p">رقم الهاتف *</label><input id="p" name="p" type="tel" required autocomplete="tel" placeholder="07XXXXXXXX"></div>
-<div class="f full"><label for="s">نوع الخدمة *</label>
-<select id="s" name="s" required><option value="">اختر الخدمة</option><option>تصميم الأزياء وتطوير الموديلات</option><option>تصميم المطاعم والمقاهي</option><option>تصميم المحلات والمتاجر</option></select></div>
-<div class="f"><label for="q">الكمية أو عدد التصاميم</label>
-<select id="q" name="q"><option>غير محدد بعد</option><option>تصميم واحد</option><option>2–5</option><option>6–10</option><option>أكثر من 10</option></select></div>
-<div class="f" id="tpf" hidden><label for="t">ملف Tech Pack</label>
-<select id="t" name="t"><option>لا، تصميم فقط</option><option>نعم، أريده أيضًا</option></select></div>
-<div class="f full"><label for="d">تفاصيل الطلب *</label><textarea id="d" name="d" required placeholder="اشرح فكرتك، نوع المنتج، الألوان أو المقاسات، وأي تفاصيل مفيدة."></textarea></div>
-<div class="full"><button class="btn p" type="submit" style="width:100%">متابعة الطلب عبر واتساب</button></div>
-<p class="note full" id="msg" role="status" aria-live="polite">سيُفتح واتساب برسالة جاهزة، راجعها ثم اضغط إرسال. تُحدَّد التكلفة بعد مراجعة تفاصيل الطلب.</p>
-</form></div></section>
+<section class="vision">
+  <div class="container">
+    <div class="section-heading">
+      <span>OUR DIRECTION</span>
+      <h2>رؤيتنا ورسالتنا</h2>
+    </div>
 
-<section class="sec" id="contact"><div class="wrap">
-<div class="eyebrow">تواصل معنا</div><h2>عندك فكرة؟ خلّينا نطوّرها.</h2>
-<div class="row"><a class="btn p" href="mailto:astudioalaa@gmail.com">راسلنا بالبريد</a><a class="btn" href="https://www.instagram.com/a21st_udio/" target="_blank" rel="noopener noreferrer">إنستغرام</a></div>
-</div></section>
+    <div class="vision-grid">
+      <div class="vision-card">
+        <h3>رؤيتنا</h3>
+        <p>
+          أن نكون استوديو متخصصًا في تطوير الأزياء،
+          وأن نساهم في بناء حلقة متكاملة تربط التصميم
+          بالإنتاج في صناعة الأزياء.
+        </p>
+      </div>
+
+      <div class="vision-card">
+        <h3>رسالتنا</h3>
+        <p>
+          مساعدة المصممين والعلامات التجارية الناشئة
+          على تنظيم أفكارهم وتحويلها إلى تصاميم
+          ومنتجات قابلة للتطوير والتنفيذ.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-heading">
+      <span>OUR SERVICES</span>
+      <h2>خدماتنا</h2>
+      <p>حلول متخصصة في تصميم وتطوير الأزياء</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service">
+        <div class="number">01</div>
+        <h3>تصميم الأزياء</h3>
+        <p>
+          تصميم الملابس وتطوير الأفكار الإبداعية
+          وتحويل المفاهيم إلى تصاميم أزياء.
+        </p>
+      </div>
+
+      <div class="service">
+        <div class="number">02</div>
+        <h3>تطوير الموديلات</h3>
+        <p>
+          تطوير تفاصيل الموديلات والقصّات
+          والتناسب والتفاصيل التصميمية.
+        </p>
+      </div>
+
+      <div class="service">
+        <div class="number">03</div>
+        <h3>Tech Packs</h3>
+        <p>
+          إعداد الملفات الفنية والمواصفات
+          والقياسات اللازمة لتوضيح المنتج.
+        </p>
+      </div>
+
+      <div class="service">
+        <div class="number">04</div>
+        <h3>تطوير المنتجات</h3>
+        <p>
+          تطوير فكرة المنتج من التصميم
+          الأولي إلى مرحلة التحضير للتنفيذ.
+        </p>
+      </div>
+
+      <div class="service">
+        <div class="number">05</div>
+        <h3>الرسومات الفنية</h3>
+        <p>
+          إعداد الرسومات الفنية للملابس
+          وتوضيح تفاصيل التصميم.
+        </p>
+      </div>
+
+      <div class="service">
+        <div class="number">06</div>
+        <h3>التحضير للإنتاج</h3>
+        <p>
+          تنظيم معلومات المنتج والتفاصيل
+          الفنية لتسهيل التواصل مع جهات التصنيع.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="section-heading">
+      <span>OUR PORTFOLIO</span>
+      <h2>معرض أعمالنا</h2>
+      <p>نماذج من أعمال التصميم والتطوير</p>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <div class="project">
+        <img
+          src="assets/corset-design.jfif"
+          alt="Corset Blazer Jumpsuit - A21 STUDIO"
+          loading="lazy">
+
+        <div class="project-info">
+          <h3>Corset Blazer Jumpsuit</h3>
+          <p>
+            تصميم أزياء أصلي يجمع بين الكورسيه
+            والياقة الرسمية والأكمام المنفوخة
+            والبنطال الواسع.
+          </p>
+          <span class="project-tag">ORIGINAL DESIGN</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="inspiration">
+  <div class="container">
+    <div class="section-heading">
+      <span>DESIGN INSPIRATION</span>
+      <h2>مصادر الإلهام</h2>
+      <p>مراجع بصرية تساعد في تطوير الأفكار والتوجهات التصميمية</p>
+    </div>
+
+    <div class="reference">
+      <img
+        src="assets/denim-reference.jfif"
+        alt="Two tone denim jacket inspiration"
+        loading="lazy">
+
+      <h3>Two-Tone Denim Jacket</h3>
+      <p>
+        مرجع بصري للإلهام ودراسة توزيع الألوان
+        والقصّات والتفاصيل في تصميم الجاكيتات.
+        هذه الصورة مرجع خارجي وليست عملاً أصليًا للاستوديو.
+      </p>
+      <span class="project-tag">DESIGN REFERENCE</span>
+    </div>
+  </div>
+</section>
+
+<section class="founder" id="founder">
+  <div class="container">
+    <div class="section-heading">
+      <span>THE FOUNDER</span>
+      <h2>مؤسس A21 STUDIO</h2>
+    </div>
+
+    <div class="founder-name">علاء عبدالله</div>
+
+    <p>
+      مؤسس A21 STUDIO، بدأ المشروع برؤية تهدف
+      إلى تطوير طريقة الانتقال من فكرة التصميم
+      إلى المنتج القابل للتنفيذ.
+      يؤمن بأهمية الجمع بين الإبداع والتطوير الفني
+      والتنظيم التقني لبناء منتجات أزياء احترافية.
+    </p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-heading">
+      <span>CONTACT US</span>
+      <h2>تواصل معنا</h2>
+      <p>للاستفسارات والتعاون ومشاريع تصميم الأزياء</p>
+    </div>
+
+    <div class="contact-info">
+      <p>Email:
+        <a href="mailto:astudioalaa@gmail.com">
+          astudioalaa@gmail.com
+        </a>
+      </p>
+
+      <p>Instagram:
+        <a href="https://www.instagram.com/a21st_udio/"
+           target="_blank" rel="noopener">
+          @a21st_udio
+        </a>
+      </p>
+
+      <p>Amman, Jordan 🇯🇴</p>
+    </div>
+
+    <a class="contact-btn"
+       href="mailto:astudioalaa@gmail.com">
+       تواصل عبر البريد الإلكتروني
+    </a>
+
+    <a class="contact-btn"
+       href="https://www.instagram.com/a21st_udio/"
+       target="_blank" rel="noopener">
+       Instagram
+    </a>
+  </div>
+</section>
+
 </main>
-<footer class="wrap"><span>© <span id="y">2026</span> A21 STUDIO</span><span>تصميم وتطوير المنتجات · الأردن</span></footer>
-<a class="wa" href="https://wa.me/962771501976" target="_blank" rel="noopener noreferrer">واتساب ↗</a>
+
+<footer>
+  <strong>A21 STUDIO</strong>
+  <p>IDEAS INTO FASHION FILES.</p>
+  <p>FASHION DESIGN & PRODUCT DEVELOPMENT</p>
+  <p>© 2026 A21 STUDIO. All Rights Reserved.</p>
+</footer>
+
 <script>
-(function(){
-var NUM="962771501976",F="تصميم الأزياء وتطوير الموديلات";
-var s=document.getElementById("s"),tf=document.getElementById("tpf"),t=document.getElementById("t"),f=document.getElementById("orderForm");
-function u(){var on=s.value===F;tf.hidden=!on;if(!on)t.selectedIndex=0}
-s.addEventListener("change",u);u();
-document.getElementById("y").textContent=new Date().getFullYear();
-f.addEventListener("submit",function(e){
-e.preventDefault();if(!f.reportValidity())return;
-var d=new FormData(f),L=["مرحبًا A21 STUDIO، أود الاستفسار عن طلب تصميم.","",
-"الاسم: "+d.get("n"),"الهاتف: "+d.get("p"),"الخدمة: "+d.get("s"),"الكمية: "+d.get("q")];
-if(d.get("s")===F)L.push("Tech Pack: "+d.get("t"));
-L.push("","التفاصيل:",d.get("d"));
-var url="https://wa.me/"+NUM+"?text="+encodeURIComponent(L.join("\n"));
-window.open(url,"_blank","noopener,noreferrer");
-});
-})();
+function toggleMenu() {
+  document.getElementById('nav').classList.toggle('open');
+}
+
+function closeMenu() {
+  document.getElementById('nav').classList.remove('open');
+}
 </script>
+
 </body>
 </html>
